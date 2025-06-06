@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+
+
+
+
+.header {
+    background-color: black;
+    border-bottom: 3px solid #8B0000; /* vermelho escuro */
+    display: flex;
+    align-items: center;
+    gap: 190px;
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+.logo img {
+    height: 120px;
+    width: 133px;
+    margin-left: 25vw;
+
+}
+
+.navigation ul {
+    
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navigation a:hover {
+    color: #8B0000;
+}
+
+.social-icons {
+    gap: 10px;
+    display: flex;
+    border-left: 2px solid white;
+
+    padding-left: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8B0000;
+}
+/* Main */
+main{
+    background-color: #000000 ;
+}
+.backgroundimg{
+    background-image: url(../img/imagendefundo.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 950px;
+  opacity: 0.5; 
+}
+
+.titulo{
+  color: white; 
+  position: relative;
+  bottom: 450px;
+  left: 690px;
+  text-align: center;
+  font-size: 100px;
+  align-items: center;
+  font-family: Just Me Again Down Here, sans-serif;
+
+}
+
+
