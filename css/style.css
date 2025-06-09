@@ -1,8 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
+*{
+    box-sizing: border-box;
+}
 
-
+body{
+    width:100vw;
+}
 
 .header {
     background-color: black;
@@ -63,6 +69,11 @@
 main{
     background-color: #000000 ;
 }
+/* Inicio */
+.inicio{
+    width: 100vw;
+    
+}
 .backgroundimg{
     background-image: url(../img/imagendefundo.jpg);
     display: flex;
@@ -75,15 +86,324 @@ main{
 }
 
 .titulo{
+    width: 100%;
   color: white; 
   position: relative;
   bottom: 450px;
-  left: 690px;
+  left: 700px;
   text-align: center;
   font-size: 100px;
   align-items: center;
   font-family: Just Me Again Down Here, sans-serif;
+  display: inline;
 
 }
+/* objetivos */
+.backgroundimg2 {
+    background-image: url(../img/image\ 5.png);
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 950px;
+    position: relative; /* Adicionado para referência absoluta */
+}
+.box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;        
+    width: 900px;
+    min-width: 250px;
+    height: 500px;              
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.box2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;       
+    width: 900px;
+    min-width: 250px;
+    height: 500px;             
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+.box__titulo{
+    color: white;
+    font-size: 40px;
+    border-bottom: 3px solid #8B0000;
+    margin: 0 0 40px 0;      
+    width: 100%;            
+    text-align: center;
+    box-sizing: border-box;
+}
+.box__texto{
+    color: white;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* nossos serviços */
+
+
+
+.servicos {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.servicos__titulo {
+  font-size: 3.5rem;
+  color: white;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-family: Italianno;
+}
+
+.linha-vermelha {
+  width: 80px;
+  height: 2px;
+  background-color: red;
+  margin: 0 auto 20px;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+/* Container geral dos cards */
+.grade-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px; /* espaço vertical entre linhas */
+}
+
+/* Linha com dois cards */
+.linha-cima {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* espaço horizontal entre os dois cards */
+  flex-wrap: wrap;
+}
+
+/* Card individual */
+.card {
+  position: relative;
+  width: 420px;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  text-decoration: none; /* Remove underline */
+  color: inherit;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(139, 0, 0, 0); /* vermelho escuro transparente */
+  transition: background 0.3s;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 30px 5px rgba(139, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.card:hover::before {
+  background: rgba(139, 0, 0, 0.35); /* vermelho escuro mais visível */
+}
+
+.card .texto-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  transition: background 0.3s;
+}
+
+.card:hover .texto-card {
+  background: rgba(0,0,0,0.7);
+}
+
+.card h3 {
+  margin: 0 0 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+/* FALE CONOSCO */
+
+.contato {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+  width: 90%;
+  max-width: 1200px;
+  height: 90vh;
+  align-items: center;
+}
+
+form {
+  flex: 2;
+  background-color: black;
+  border: 1px solid red;
+  padding: 30px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+form h2 {
+  font-family: 'Courier New', cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  padding: 12px;
+  background-color: lightgray;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.info-contato {
+  flex: 1;
+  background-color: black;
+  border: 1px solid red;
+  padding: 30px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 20px;
+}
+
+.bloco {
+  background-color: black;
+  border: 1px solid red;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bloco h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.bloco p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .contato {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  form, .info-contato {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  form h2 {
+    font-size: 28px;
+  }
+
+  .bloco h3 {
+    font-size: 24px;
+  }
+
+  .bloco p {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 

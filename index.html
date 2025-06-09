@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,37 +8,118 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <title>Imperial Barbershop</title>
 </head>
 
-    <body>
-        <header class="header">
+<body>
+    <header class="header">
 
-            <div class="logo">
-                <img src="./img/Mídia.jpg" alt="Logo Imperium">
-            </div>
+        <div class="logo">
+            <img src="./img/Mídia.jpg" alt="Logo Imperium">
+        </div>
 
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Lojas</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Lojas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
 
-            <div class="social-icons">
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </header>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </header>
 
-        <main>
-            <div class="backgroundimg"></div> 
-            
+    <main>
+        <section class="Inicio">
+            <div class="backgroundimg"></div>
+
             <h1 class="titulo">Imperial Barbershop</h1>
-        </main>
+        </section>
 
-    </body>
+        <section class="Objetivos">
+            <div class="backgroundimg2">
+
+           <div class="box1">
+                    <p class="box__titulo">Nosso Objetivo</p>
+                    <p class="box__texto">Temos como objetivo proporcionar cortes e cuidados com estilo, qualidade e
+                        personalidade, garantindo a
+                        melhor experiência para cada cliente. Aqui, você não apenas corta o cabelo – você reforça sua
+                        identidade!</p>
+                </div>
+
+                <div class="box2">
+                    <p class="box__titulo">Nossas marcas</p>
+                    <p class="box__texto">Trabalhamos com as melhores marcas do mercado para garantir qualidade, estilo
+                        e cuidado com seu
+                        visual. Dos produtos premium para barba e cabelo aos acessórios essenciais, oferecemos o que há
+                        de
+                        melhor para você!</p>
+                </div>
+            </div>
+        </section>
+
+  <section class="servicos">
+    <h2 class="servicos__titulo">O que oferecemos</h2>
+    <div class="linha-vermelha"></div>
+    <p class="subtitulo">Veja Nossos Serviçoes.</p>
+
+   <div class="grade-cards">
+  <div class="linha-cima">
+    <a class="card" href="https://exemplo.com/corte" target="_blank" style="background-image: url('./IMG/maxresdefault.jpg');">
+      <div class="texto-card">
+        <h3>Corte</h3>
+        <p>Feito com base na estética e harmonia adequadas para o formato do seu rosto.</p>
+      </div>
+    </a>
+
+    <a class="card" href="https://exemplo.com/barba" target="_blank" style="background-image: url('./IMG/barba-desenhada.jpg');">
+      <div class="texto-card">
+        <h3>Barba</h3>
+        <p>O tratamento que sua barba merece, feito com navalha e máquina e produtos que hidratam os pelos do rosto.</p>
+      </div>
+    </a>
+  </div>
+
+  <a class="card" href="https://exemplo.com/maquina" target="_blank" style="background-image: url('./IMG/istockphoto-1320661603-612x612.jpg');">
+    <div class="texto-card">
+      <h3>Máquina</h3>
+      <p>Cortes apenas com a máquina de cabelo, neste serviço o uso de pente varia conforme o serviço realizado.</p>
+    </div>
+  </a>
+</div>
+
+  <section class="contato">
+    <form id="form-contato">
+      <h2>FALE COM NOSCO</h2>
+      <div class="input-group">
+        <input type="text" placeholder="Nome:" required>
+        <input type="text" placeholder="Telefone:" required>
+      </div>
+      <input type="email" placeholder="E-mail:" required>
+      <input type="text" placeholder="Assunto:" required>
+      <textarea placeholder="Mensagem:" required></textarea>
+      <button type="submit">Enviar:</button>
+    </form>
+
+    <div class="info-contato">
+      <div class="bloco">
+        <h3>TELEFONE:</h3>
+        <p>(55)13988-980002</p>
+      </div>
+      <div class="bloco">
+        <h3>Endereço:</h3>
+        <p>Rua Jacinto Pinto<br>aqui no rebo</p>
+      </div>
+    </div>
+  </section>
+
+    </main>
+
+</body>
 
 </html>
