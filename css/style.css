@@ -21,7 +21,7 @@ body {
     font-family: 'Arial', sans-serif;
     position: fixed;
     width: 100vw;
-    z-index: 1;
+    z-index: 3;
 }
 
 .logo img {
@@ -72,33 +72,39 @@ main{
     background-color: #000000 ;
 }
 /* Inicio */
-.inicio{
-    width: 100vw;
-    
-}
-.backgroundimg{
-    background-image: url(../img/imagendefundo.jpg);
-    display: flex;
-    flex-wrap: wrap;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 950px;
-  opacity: 0.5; 
-}
-
-.titulo{
-    width: 100%;
-  color: white; 
+.inicio {
+  width: 100vw;
+  min-height: 100vh;
   position: relative;
-  bottom: 450px;
-  left: 700px;
-  text-align: center;
-  font-size: 100px;
+  overflow: hidden;
+  display: flex;
   align-items: center;
-  font-family: Just Me Again Down Here, sans-serif;
-  display: inline;
+  justify-content: center;
+}
 
+.backgroundimg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/imagendefundo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.titulo {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-family: 'Just Me Again Down Here', cursive, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #000, 0 0 10px #8B0000;
 }
 /* objetivos */
 .backgroundimg2 {
@@ -285,9 +291,9 @@ main{
   align-items: center;
   justify-content: center;
   background-color: #000000;
-  
   margin-left: auto;
   margin-right: auto;
+   
 }
 
 form {
@@ -372,49 +378,85 @@ button {
   color: #ffffff;
   text-align: center;
 }
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  body {
-    height: auto;
-    padding: 20px 0;
-  }
-
-  .contato {
-    flex-direction: column;
-    height: auto;
-    gap: 30px;
-    padding: 20px;
-  }
-
-  form, .info-contato {
-    width: 100%;
-    margin: 0;
-    height: auto;
-  }
-
-  form h2 {
-    font-size: 28px;
-  }
-
-  .bloco h3 {
-    font-size: 24px;
-  }
-
-  .bloco p {
-    font-size: 18px;
-  }
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  border-top: 3px solid #8B0000;
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 150px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 40px 0 40px;
+  box-sizing: border-box;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+ 
+}
+.footer-col--logo {
+  min-width: 220px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-list a:hover {
+  color: #8B0000;
+}
+.footer-label {
+  font-style: italic;
+  font-size: 1rem;
+}
+.footer-info {
+  font-size: 1rem;
+}
+.footer-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 8px;
+}
+.footer-social a {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+.footer-social a:hover {
+  color: #8B0000;
+}
+.footer-img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  background: #111;
+  border-radius: 6px;
+  display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* Responsivo */
