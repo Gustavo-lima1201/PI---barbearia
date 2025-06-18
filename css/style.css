@@ -72,40 +72,9 @@ main{
     background-color: #000000 ;
 }
 /* Inicio */
-.inicio {
-  width: 100vw;
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.backgroundimg {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../img/imagendefundo.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  z-index: 1;
-}
 
-.titulo {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-align: center;
-  font-size: clamp(2.5rem, 8vw, 6rem);
-  font-family: 'Just Me Again Down Here', cursive, sans-serif;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 8px #000, 0 0 10px #8B0000;
-}
+ 
 /* objetivos */
 .backgroundimg2 {
     background-image: url(../img/image\ 5.png);
