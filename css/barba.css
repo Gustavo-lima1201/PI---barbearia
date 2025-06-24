@@ -1,0 +1,382 @@
+  body {
+            background-color: #000;
+        }
+    
+
+        /* Cabeçalho */
+       .header {
+    background-color: black;
+    border-bottom: 3px solid #8B0000; /* vermelho escuro */
+    display: flex;
+    align-items: center;
+    gap: 190px;
+    font-family: 'Arial', sans-serif;
+    width: 100vw;
+    z-index: 3;
+}
+
+.logo img {
+    height: 120px;
+    width: 133px;
+    margin-left: 25vw;
+
+}
+
+.navigation ul {
+    
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navigation a:hover {
+    color: #8B0000;
+}
+
+.social-icons {
+    gap: 10px;
+    display: flex;
+    border-left: 2px solid white;
+
+    padding-left: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8B0000;
+}
+
+        /*cliente formatação*/
+        #clientes {
+  font-size: 1.0rem;
+  margin-bottom: 1rem;
+}
+
+#clientes {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#clientes {
+  background-color: #8b0000;
+}
+
+        /* Conteúdo principal */
+        .principal {
+            margin-top: 55px;
+            padding: 40px 20px;
+        }
+
+        .destaque-servico {
+            background-image: url('../barba.img/pacote\ acabamentos.jpg ');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-bottom: 50px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .destaque-servico::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .destaque-servico h1 {
+            color: #fff;
+            font-size: 3rem;
+            position: relative;
+            z-index: 1;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .conteudo-servico {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .introducao-servico {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .introducao-servico h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #8b0000;
+            text-transform: uppercase;
+        }
+
+        .introducao-servico p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .opcoes-servico {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .cartao-servico {
+            background-color: #111;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            border: 1px solid #8b0000;
+        }
+
+        .cartao-servico:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(212, 55, 55, 0.3);
+        }
+
+        .cartao-servico img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #8b0000;
+        }
+
+        .conteudo-cartao {
+            padding: 20px;
+        }
+
+        .conteudo-cartao h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #8b0000;
+        }
+
+        .conteudo-cartao p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .preco-servico {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #8b0000;
+            margin-bottom: 15px;
+        }
+
+        .botao {
+            display: inline-block;
+            background-color: #8b0000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: 2px solid #80030e;
+        }
+
+        .botao:hover {
+            background-color: transparent;
+            color: #80030e;
+        }
+
+        /* Carrossel */
+        .carrossel-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .carrossel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carrossel img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .carrossel-controle {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carrossel-btn {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .carrossel-btn:hover {
+            background-color: #8b0000;
+        }
+
+        /* Rodapé */
+ .footer {
+  background: #000;
+  color: #fff;
+  border-top: 3px solid #8B0000;
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 150px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 40px 0 40px;
+  box-sizing: border-box;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+ 
+}
+.footer-col--logo {
+  min-width: 220px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-list a:hover {
+  color: #8B0000;
+}
+.footer-label {
+  font-style: italic;
+  font-size: 1rem;
+}
+.footer-info {
+  font-size: 1rem;
+}
+.footer-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 8px;
+}
+.footer-social a {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+.footer-social a:hover {
+  color: #8B0000;
+}
+.footer-img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  background: #111;
+  border-radius: 6px;
+  display: block;
+}
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 25px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container-cabecalho {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-bottom: 15px;
+            }
+
+            .navegacao-principal ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navegacao-principal ul li {
+                margin: 8px 0;
+            }
+
+            .destaque-servico h1 {
+                font-size: 2rem;
+            }
+
+            .opcoes-servico {
+                grid-template-columns: 1fr;
+            }
+
+            .carrossel img {
+                height: 300px;
+            }
+        }

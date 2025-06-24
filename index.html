@@ -17,32 +17,37 @@
 
 
   <title>Imperial Barbershop</title>
+    <link rel="icon" type="image/x-icon" href="./img/imperial_barbershop_logo.ico">
 </head>
 
 <body>
   <header class="header">
+  <div class="logo">
+    <img src="./img/Mídia.png" alt="Logo Imperium">
+  </div>
 
-    <div class="logo">
-      <img src="./img/Mídia.jpg" alt="Logo Imperium">
+  <nav class="navigation" id="navMenu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Lojas</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+    <!-- Botão do hamburguer -->
+   <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+  </div>
+</header>
 
-    <nav class="navigation">
-
-      <ul>
-        <li><a href="#Inicio">Home</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#lojas">Lojas</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-
-    </nav>
-
-    <div class="social-icons">
-      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-
-  </header>
 
   <main>
     <a id="Inicio"></a>
@@ -122,7 +127,7 @@
       <p class="subtitulo">Veja Nossos Serviçoes.</p>
       <div class="grade-cards">
         <div class="linha-cima">
-          <a class="card" href="https://exemplo.com/corte" target="_blank"
+          <a class="card" href="./corte/corte.html" target="_self"
             style="background-image: url('./IMG/maxresdefault.jpg');">
             <div class="texto-card">
               <h3>Corte</h3>
@@ -130,7 +135,7 @@
             </div>
           </a>
 
-          <a class="card" href="https://exemplo.com/barba" target="_blank"
+          <a class="card" href="./barba/barba.html" target="_self"
             style="background-image: url('./IMG/barba-desenhada.jpg');">
             <div class="texto-card">
               <h3>Barba</h3>
@@ -140,7 +145,7 @@
           </a>
         </div>
 
-        <a class="card" href="https://exemplo.com/maquina" target="_blank"
+        <a class="card" href="./maquina/maquina.html" target="_self"
           style="background-image: url('./IMG/istockphoto-1320661603-612x612.jpg');">
           <div class="texto-card">
             <h3>Máquina</h3>
@@ -210,7 +215,7 @@
         </div>
       </div>
       <div class="footer-col footer-col--logo">
-        <img class="footer-img" src="img/Mídia.jpg" alt="Logo Imperial Barbershop">
+        <img class="footer-img" src="./img/Mídia.png" alt="Logo Imperial Barbershop">
       </div>
     </div>
   </footer>
