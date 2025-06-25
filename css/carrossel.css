@@ -111,3 +111,16 @@
 .button.active {
   background-color: #e53935 !important;
 }
+@media (max-width: 767px) {
+  .carousel-caption{
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .carrossel__p {
+    font-size: 0.75rem;
+  }
+  .carrossel__titulo {
+    font-size: 1rem;
+  }
+}

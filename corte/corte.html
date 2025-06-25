@@ -16,29 +16,32 @@
 
 <body>
     <!-- Cabeçalho -->
-     <header class="header">
+  <header class="header">
+  <div class="logo">
+    <img src="../img/Mídia.png" alt="Logo Imperium">
+  </div>
 
-    <div class="logo">
-      <img src="../img/Mídia.png" alt="Logo Imperium">
+  <nav class="navigation" id="navMenu">
+    <ul>
+    <li><a href="./../index.html#Inicio">Home</a></li>
+      <li><a href="./../index.html#servicos">Serviços</a></li>
+      <li><a href="./../loja/loja.html">Lojas</a></li>
+      <li><a href="./../index.html#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+    <!-- Botão do hamburguer -->
+   <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-
-    <nav class="navigation">
-
-      <ul>
-        <li><a href="./../index.html#Inicio">Home</a></li>
-        <li><a href="./../index.html#servicos">Serviços</a></li>
-        <li><a href="./../index.html#lojas">Lojas</a></li>
-        <li><a href="./../index.html#contato">Contato</a></li>
-      </ul>
-
-    </nav>
-
-    <div class="social-icons">
-      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-
-  </header>
+  </div>
+</header>
 
     <!-- Conteúdo principal -->
     <main class="principal">
@@ -56,7 +59,7 @@
 
             <section class="opcoes-servico">
                 <article class="cartao-servico">
-                    <img src="../corte.img/corte1.png"
+                    <img src="../barba.img/corte1.png"
                         alt="Barba Tradicional">
                     <div class="conteudo-cartao">
                         <h3>Cortes Tradicional</h3>
@@ -67,7 +70,7 @@
                 </article>
 
                 <article class="cartao-servico">
-                    <img src="../corte.img/corte2.png"
+                    <img src="../barba.img/corte2.png"
                         alt="Barba Premium">
                     <div class="conteudo-cartao">
                         <h3>Cortes Premium</h3>
@@ -79,7 +82,7 @@
                 </article>
 
                 <article class="cartao-servico">
-                    <img src="./img/corte3.png"
+                    <img src="../barba.img/corte3.png"
                         alt="Barba Completa">
                     <div class="conteudo-cartao">
                         <h3>Cortes Completa</h3>
@@ -91,7 +94,7 @@
 
                 <!-- Novos cards adicionados -->
                 <article class="cartao-servico">
-                    <img src="./img/20932.jpg"
+                    <img src="../barba.img/20932.jpg"
                         alt="Pigmentação de Barba">
                     <div class="conteudo-cartao">
                         <h3>Corte com Desenho</h3>
@@ -103,7 +106,7 @@
                 </article>
 
                 <article class="cartao-servico">
-                    <img src="./img/Barba Navalha.jpg"
+                    <img src="../barba.img/Barba Navalha.jpg"
                         alt="Pigmentação + Corte">
                     <div class="conteudo-cartao">
                         <h3>Pigmentação + Corte</h3>
@@ -115,7 +118,7 @@
                 </article>
 
                 <article class="cartao-servico">
-                    <img src="./img/haircut1.jpg"
+                    <img src="../barba.img/haircut1.jpg"
                         alt="Barba Personalizada">
                     <div class="conteudo-cartao">
                         <h3>Corte Personalizada</h3>
@@ -132,15 +135,15 @@
               <h2 id="clientes">VEJA AQUI NOSSOS CLIENTES SATISFEITOS</h2>
 
                 <div class="carrossel" id="carrossel">
-                    <img src="./img/peluquero.jpg"
+                    <img src="../corte.img/peluquero.jpg"
                         alt="Barba estilo 1">
-                    <img src="./img/peluquero-en-el-trabajo.jpg"
+                    <img src="../corte.img/peluquero-en-el-trabajo.jpg"
                         alt="Barba estilo 2">
-                    <img src="./img/peluquero-tatuado.jpg"
+                    <img src="../barba.img/peluquero-tatuado.jpg"
                         alt="Barba estilo 3">
-                    <img src="./img/sobrancelha.jpg"
+                    <img src="../corte.img/sobrancelha.jpg"
                         alt="Barba estilo 4">
-                    <img src="./img/haircut1.jpg"
+                    <img src="../barba.img/haircut1.jpg"
                         alt="Barba estilo 5">
                 </div>
                 <div class="carrossel-controle">
@@ -160,7 +163,7 @@
            <li><a href="./../index.html#Inicio">Home</a></li>
           <li><a href="./../index.html#Objetivos">Objetivos</a></li>
           <li><a href="./../index.html#contato">Serviços</a></li>
-          <li><a href="./../index.html#lojas">Loja</a></li>
+          <li><a href="./loja/loja.html">Loja</a></li>
         </ul>
       </div>
       <div class="footer-col">

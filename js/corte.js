@@ -1,4 +1,7 @@
 // Efeito de rolagem suave para âncoras
+function toggleMenu() {
+  document.querySelector('.navigation ul').classList.toggle('show');
+}
 document.querySelectorAll('a[href^="#"]').forEach(ancora => {
     ancora.addEventListener('click', function (e) {
         e.preventDefault();

@@ -1,0 +1,328 @@
+body {
+    background-color: #111;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: black;
+    border-bottom: 3px solid #8B0000;
+    display: flex;
+    align-items: center;
+    gap: 190px;
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+#titulo-produto {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#titulo-produto:hover {
+    color: #e74c3c;
+    transform: scale(1.05);
+}
+
+.logo img {
+    height: 120px;
+    width: 133px;
+    margin-left: 25vw;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navigation a:hover {
+    color: #d4d3d3;
+}
+
+.social-icons {
+    gap: 10px;
+    display: flex;
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8B0000;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.produtos-secundarios {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid red;
+}
+
+.produto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+    padding-top: 100px;
+}
+
+.seta {
+    align-items: right;
+}
+
+.imagem-produto img {
+    width: 300px;
+    border-radius: 8px;
+    margin-top: 50px;
+    border: 3px solid #8B0000;
+    opacity: 1;
+}
+
+.imagem-produto:hover img {
+    transition: transform 0.5s;
+    transform: scale(1.05);
+}
+
+.descricao-produto {
+    max-width: 600px;
+    color: #fff;
+}
+
+.descricao-produto h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Italiana', Arial, sans-serif;
+}
+
+.preco {
+    font-size: 28px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.botao {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.botao.agendar {
+    background-color: #c0392b;
+    margin-left: 10px;
+}
+
+.botao:hover {
+    opacity: 0.9;
+}
+
+.seta-proxima {
+    background-color: #000;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+}
+
+.seta-proxima:hover {
+    background-color: #8B0000;
+    color: white;
+}
+
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.produto {
+    background-color: #111;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.produto:hover {
+    border-color: #c80000;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.produto .preco {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.produto button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #c80000;
+}
+
+/* RESPONSIVIDADE - Tablet / Mobile */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #111;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        z-index: 9;
+    }
+
+    .navigation.active {
+        display: flex;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .navigation li {
+        width: 100%;
+    }
+
+    .navigation a {
+        font-size: 1.2rem;
+        padding: 10px 0;
+        display: block;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    /* CENTRALIZAR SOCIAL ICONS + HAMBURGUER NO TABLET */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        border-left: none;
+        padding-left: 0;
+        gap: 15px;
+    }
+
+    .logo img {
+        margin-left: 0;
+        height: 80px;
+    }
+}
+@media (max-width: 480px) {
+  .descricao-produto h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .preco {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #desc-produto {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .produto-container {
+    flex-direction: column;
+    padding-top: 220px;
+  }
+}

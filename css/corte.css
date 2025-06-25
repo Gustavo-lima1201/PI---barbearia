@@ -2,60 +2,58 @@ body {
     background-color: #000;
 }
     
-    .header {
-        background-color: black;
-        border-bottom: 3px solid #8B0000; /* vermelho escuro */
-        display: flex;
-        align-items: center;
-        gap: 190px;
-        font-family: 'Arial', sans-serif;
-        width: 100vw;
-    }
+ .header {
+  background-color: black;
+  border-bottom: 3px solid #8B0000;
+  display: flex;
+  align-items: center;
+  gap: 190px;
+  font-family: 'Arial', sans-serif;
+  
+  width: 100vw;
+  z-index: 3;
+}
 
 .logo img {
-    height: 120px;
-    width: 133px;
-    margin-left: 25vw;
-
+  height: 120px;
+  width: 133px;
+  margin-left: 25vw;
 }
 
 .navigation ul {
-    
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .navigation a:hover {
-    color: #8B0000;
+  color: #8B0000;
 }
 
 .social-icons {
-    gap: 10px;
-    display: flex;
-    border-left: 2px solid white;
-
-    padding-left: 10px;
+  gap: 10px;
+  display: flex;
+  border-left: 2px solid white;
+  padding-left: 10px;
 }
 
 .social-icons a {
-    color: white;
-    font-size: 2.5rem;
-    transition: color 0.3s ease;
+  color: white;
+  font-size: 2.5rem;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #8B0000;
+  color: #8B0000;
 }
-
         /*cliente formatação*/
         #clientes {
   font-size: 1.0rem;
@@ -84,7 +82,7 @@ body {
         }
 
         .destaque-servico {
-            background-image: url('../img/imagem.jpg');
+            background-image: url('../barba.img/imagem.jpg');
             background-size: cover;
             background-position: center;
             height: 600px;
@@ -124,6 +122,7 @@ body {
         .introducao-servico {
             text-align: center;
             margin-bottom: 50px;
+            color: #fff;
         }
 
         .introducao-servico h2 {
@@ -250,7 +249,7 @@ body {
         }
 
         .carrossel-btn:hover {
-            background-color: rgba(212, 175, 55, 0.7);
+            background-color: #8B0000;
         }
 
         /* Rodapé */
@@ -375,3 +374,260 @@ body {
                 height: 300px;
             }
         }
+/* RESPONSIVO - Tablet */
+@media (max-width: 1024px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    border-left: none;
+    padding-left: 0;
+    gap: 15px;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo img {
+    margin-left: 0;
+    height: 80px;
+  }
+
+  .linha-cima {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contato {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+/* RESPONSIVO - Celular */
+@media (max-width: 480px) {
+  .box1, .box2 {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .box__titulo {
+    font-size: 28px;
+  }
+
+  .box__texto {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .servicos__titulo {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  form h2 {
+    font-size: 28px;
+  }
+
+  input, textarea {
+    font-size: 14px;
+  }
+
+  .footer-container {
+    padding: 20px;
+  }
+
+  .footer-title {
+    font-size: 1.2rem;
+  }
+
+  .footer-list a, .footer-info, .footer-label {
+    font-size: 0.9rem;
+  }
+
+  .footer-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* ===================== RESPONSIVIDADE ===================== */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  /* HEADER */
+  .header {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .logo img {
+    margin-left: 0;
+    height: 100px;
+    width: auto;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 15px;
+    background: black;
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+  }
+
+  .navigation ul.show {
+    display: flex;
+  }
+
+  /* Ícones sociais no meio no tablet */
+  .social-icons {
+    justify-content: center;
+    width: 100%;
+    border-left: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  /* Botão hambúrguer */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    margin-left: 10px;
+  }
+}
+
+/* Celulares (até 480px) */
+@media (max-width: 480px) {
+  /* HEADER */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 80px;
+    width: auto;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* OBJETIVOS */
+  .box1,
+  .box2 {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .box__titulo {
+    font-size: 24px;
+  }
+
+  .box__texto {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  /* CARDS SERVIÇOS */
+  .linha-cima {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  /* CONTATO */
+  .contato {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  form h2 {
+    font-size: 24px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* Melhorando espaçamento e separação nos Objetivos no Tablet */
+@media (max-width: 1024px) and (min-width: 481px) {
+  .backgroundimg2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .box1,
+  .box2 {
+    position: static;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .box__titulo {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .box__texto {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+}
