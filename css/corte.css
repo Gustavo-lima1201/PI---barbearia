@@ -342,39 +342,7 @@ body {
             color: #777;
         }
 
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .container-cabecalho {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .logo {
-                margin-bottom: 15px;
-            }
-
-            .navegacao-principal ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .navegacao-principal ul li {
-                margin: 8px 0;
-            }
-
-            .destaque-servico h1 {
-                font-size: 2rem;
-            }
-
-            .opcoes-servico {
-                grid-template-columns: 1fr;
-            }
-
-            .carrossel img {
-                height: 300px;
-            }
-        }
-/* RESPONSIVO - Tablet */
+      /* RESPONSIVO - Tablet */
 @media (max-width: 1024px) {
   .header {
     flex-wrap: wrap;
@@ -538,6 +506,7 @@ body {
   .navigation ul {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
 
   /* OBJETIVOS */
@@ -629,5 +598,146 @@ body {
   .box__texto {
     font-size: 20px;
     padding: 0 15px;
+  }
+}
+@media (max-width: 480px) {
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+
+  .footer-col--logo {
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 10px;
+    height: 90px; /* reduz altura */
+  }
+
+  .logo img {
+    height: 70px;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .navigation ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 10;
+  }
+
+  .navigation ul.show {
+    display: flex;
+  }
+
+  .social-icons {
+    gap: 10px;
+    border-left: 1px solid white;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    height: 80px; /* menor ainda no celular */
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .backgroundimg2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .box1,
+  .box2 {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    height: auto;
+  }
+
+  .box__titulo {
+    font-size: 24px;
+  }
+
+  .box__texto {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  .servicos__titulo {
+    font-size: 2rem;
+  }
+
+  .linha-cima {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .contato {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  form h2 {
+    font-size: 24px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
   }
 }
