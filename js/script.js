@@ -1,6 +1,8 @@
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-  document.querySelector('.navigation').classList.toggle('open');
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".navigation ul");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
 });
-function toggleMenu() {
-  document.querySelector('.navigation ul').classList.toggle('show');
-}
