@@ -39,6 +39,7 @@ body {
 .navigation {
   display: flex;
   justify-content: center;
+
 }
 
 .navigation ul {
@@ -66,9 +67,15 @@ body {
   padding-left: 15px;
 }
 
-.social-icons a {
-  color: white;
-  font-size: 2rem;
+.cadastros {
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+}
+#border{
+border-left: 1px solid white;
+
+
 }
 
 .menu-toggle {
@@ -93,6 +100,7 @@ main {
   width: 100%;
   min-height: 950px;
   position: relative;
+  border-top: 1px solid #8B0000;
 }
 
 .box1,
@@ -100,6 +108,7 @@ main {
   position: absolute;
   margin: 30px;
   width: 900px;
+  height: 300px ;
   max-width: 90%;
   background: black;
   display: flex;
@@ -204,8 +213,9 @@ main {
   display: flex;
   gap: 60px;
   padding: 60px 20px;
-  max-width: 1200px;
+ 
   margin: auto;
+  border-top: 1px solid #8B0000;
 }
 
 form {
@@ -213,6 +223,9 @@ form {
   border: 1px solid red;
   padding: 30px;
   border-radius: 10px;
+  max-width: 800px;
+  margin:auto
+  
 }
 
 form h2 {
@@ -224,13 +237,14 @@ form h2 {
 .input-group {
   display: flex;
   gap: 10px;
+  border-radius: 10px;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 12px;
-  border-radius: 10px;
+  padding: 10px;
+  gap: 15px;
   border: none;
   margin-bottom: 10px;
 }
@@ -252,7 +266,9 @@ button {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 200px;
+  max-width: 400px;
+  margin: auto;
 }
 
 .bloco {
@@ -261,7 +277,7 @@ button {
   text-align: center;
 }
 
-/* ================= FOOTER (ARRUMADO) ================= */
+/* ================= FOOTER ================= */
 
 .footer {
   background: black;

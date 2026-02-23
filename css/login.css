@@ -1,0 +1,407 @@
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#0d0d0d;
+  min-height:100vh;
+}
+
+/* ================= HEADER ================= */
+.header{
+  background:black;
+  border-bottom:3px solid #8B0000;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 30px;
+  width:100%;
+  position:relative;
+}
+
+.logo img{
+  height:120px;
+  margin-left: 500px;
+}
+.navigation{
+  position:static;
+  
+}
+
+.navigation ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+.navigation a{
+  color:white;
+  text-decoration:none;
+  font-size:1.1rem;
+  transition:.3s;
+}
+
+.navigation a:hover{
+  color:#8B0000;
+}
+
+.social-icons{
+  display:flex;
+  gap:15px;
+  align-items:center;
+  border-left:2px solid white;
+  padding-left:15px;
+}
+
+.social-icons a{
+  color:white;
+  font-size:2rem;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:2rem;
+  color:white;
+  cursor:pointer;
+}
+
+/* ================= MAIN ================= */
+main{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:70vh;
+}
+
+/* ================= CARD LOGIN ================= */
+.container{
+  background:#111;
+  padding:40px 35px;
+  margin:180px auto 60px;
+  border-radius:14px;
+  width:100%;
+  max-width:400px;
+  text-align:center;
+  border:1px solid #1f1f1f;
+
+  box-shadow:
+  0 0 0 1px #8B0000,
+  0 0 25px rgba(139,0,0,0.25),
+  0 0 60px rgba(139,0,0,0.1);
+
+  animation:fadeUp .6s ease;
+  color:#eee;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(25px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.container img{
+  width:70px;
+  margin-bottom:15px;
+}
+
+.container span{
+  color:#ff1a1a;
+  font-weight:bold;
+}
+
+.container h1{
+  font-size:30px;
+  margin-bottom:5px;
+  color:white;
+}
+
+.container p{
+  color:#aaa;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+/* ================= FORM ================= */
+form label{
+  text-align:left;
+  display:block;
+  color:#ccc;
+  margin:14px 0 6px;
+}
+
+input{
+  width:100%;
+  padding:11px;
+  border-radius:8px;
+  border:1px solid #333;
+  background:#1a1a1a;
+  color:white;
+  transition:.25s;
+}
+
+input:hover{
+  border-color:#ff0000;
+}
+
+input:focus{
+  border-color:#8B0000;
+  box-shadow:0 0 8px rgba(139,0,0,0.5);
+  transform:scale(1.02);
+  outline:none;
+}
+
+/* ================= BUTTON ================= */
+button{
+  margin-top:22px;
+  background:#8B0000;
+  padding:13px;
+  border-radius:8px;
+  border:none;
+  width:100%;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:.25s;
+}
+
+button:hover{
+  background:#b30000;
+  box-shadow:0 0 15px rgba(139,0,0,0.4);
+}
+
+button:active{
+  transform:scale(.96);
+}
+
+/* ================= LINKS ================= */
+.texto{
+  margin-top:20px;
+  color:#aaa;
+}
+
+.texto a{
+  color:#ff2b2b;
+  text-decoration:none;
+}
+
+.texto a:hover{
+  text-shadow:0 0 8px red;
+}
+
+/* ================= DIV GOOGLE ================= */
+.Google-api{
+  border:1px solid #333;
+  padding:10px;
+  border-radius:6px;
+  cursor:pointer;
+  background:#1a1a1a;
+  transition:.2s;
+}
+
+.Google-api:hover{
+  border-color:#ff1a1a;
+  color:#ff1a1a;
+}
+
+/* ================= FOOTER ================= */
+.footer{
+  background:#000;
+  color:#fff;
+  border-top:3px solid #8B0000;
+  width:100%;
+}
+
+.footer-container{
+  display:flex;
+  gap:150px;
+  max-width:1400px;
+  margin:auto;
+  padding:30px 40px 0;
+}
+
+.footer-col{
+  display:flex;
+  flex-direction:column;
+  min-width:180px;
+}
+
+.footer-col--logo{
+  align-items:flex-end;
+}
+
+.footer-title{
+  font-weight:bold;
+  font-size:1.5rem;
+  font-style:italic;
+  margin-bottom:10px;
+}
+
+.footer-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.footer-list a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer-list a:hover{
+  color:#8B0000;
+}
+
+.footer-social{
+  display:flex;
+  gap:18px;
+  margin-top:8px;
+}
+
+.footer-social a{
+  color:#fff;
+  font-size:2rem;
+}
+
+.footer-social a:hover{
+  color:#8B0000;
+}
+
+.footer-img{
+  width:220px;
+  height:220px;
+  object-fit:contain;
+  background:#111;
+  border-radius:6px;
+}
+
+.copyright{
+  text-align:center;
+  margin-top:40px;
+  padding-top:20px;
+  border-top:1px solid #333;
+  font-size:.9rem;
+  color:#777;
+}
+
+/* ================= RESPONSIVO ================= */
+
+/* tablet */
+@media (max-width:1024px){
+
+.footer-container{
+  gap:60px;
+  flex-wrap:wrap;
+  justify-content:center;
+  text-align:center;
+}
+
+.footer-col--logo{
+  align-items:center;
+}
+
+}
+
+/* celular grande */
+@media (max-width:768px){
+
+.logo img{height:80px;}
+
+.navigation ul{gap:18px;}
+
+.navigation a{font-size:.95rem;}
+
+.social-icons a{font-size:1.5rem;}
+
+.container{
+  margin:140px 20px 40px;
+}
+
+}
+@media (min-width:601px){
+  .navigation{
+    position:static;
+    transform:none;
+    left:auto;
+    width:auto;
+    max-width:none;
+    border:none;
+  }
+}
+
+/* celular */
+@media (max-width:600px){
+
+.navigation{
+  position:absolute;
+  top:100%;
+  left:50%;
+  transform:translateX(-50%);
+  background:black;
+  width:90%;
+  max-width:400px;
+  display:none;
+  flex-direction:column;
+  border:2px solid #8B0000;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.navigation.active{
+  display:flex;
+}
+
+.navigation ul{
+  flex-direction:column;
+  padding:20px;
+  gap:15px;
+  text-align:center;
+}
+
+
+.menu-toggle{
+  display:block;
+}
+
+.social-icons{
+  border-left:none;
+}
+
+.footer-container{
+  flex-direction:column;
+  gap:40px;
+  text-align:center;
+}
+
+.footer-img{
+  width:150px;
+  height:150px;
+}
+
+.container h1{
+  font-size:24px;
+}
+
+.container{
+  padding:30px 20px;
+}
+
+}
+
+/* celular pequeno */
+@media (max-width:400px){
+
+.logo img{height:65px;}
+
+.container{
+  margin-top:120px;
+}
+
+button{
+  font-size:14px;
+}
+
+}
