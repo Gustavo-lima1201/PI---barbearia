@@ -7,28 +7,30 @@
     
     <title>Login</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
 </head>
 <body>
 
-        <header class="header">
+           <header class="header">
   <div class="logo">
     <img src="../img/Mídia.png" alt="Logo Imperium">
   </div>
 
   <nav class="navigation" id="navMenu">
     <ul>
-      <li><a href="#Inicio">Home</a></li>
-      <li><a href="#servicos">Serviços</a></li>
-      <li><a href="./loja/loja.html">Lojas</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a href="./../index.html#Inicio">Home</a></li>
+          <li><a href="./../index.html#Objetivos">Objetivos</a></li>
+          <li><a href="./../index.html#contato">Serviços</a></li>
+          <li><a href="./loja/loja.html">Loja</a></li>
     </ul>
   </nav>
 
  <div class="social-icons">
-  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="cadastro.html">cadastro</i></a>
+  <a href="login.html">login</a>
 
-  <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
 </div>
       <span></span>
       <span></span>
@@ -103,10 +105,6 @@
             <p>&copy; 2023 Imperial Barbearia. Todos os direitos reservados.</p>
         </div>
     </footer>
-<script>
-function toggleMenu(){
-  document.getElementById("navMenu").classList.toggle("active");
-}
-</script>
+
 </body>
 </html>

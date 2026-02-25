@@ -17,79 +17,61 @@ body {
 
 /* ================= HEADER ================= */
 
-.header {
-  background-color: black;
-  border-bottom: 3px solid #8B0000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 10px 30px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+.header{
+  background:black;
+  border-bottom:3px solid #8B0000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:80px;
+  padding:10px 30px;
+  position:relative;
 }
 
-.logo img {
-  height: 120px;
+.logo img{
+  height:100px;
 }
 
-.navigation {
-  display: flex;
-  justify-content: center;
-
+/* MENU */
+.navigation ul{
+  display:flex;
+  gap:35px;
+  list-style:none;
 }
 
-.navigation ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
+.navigation a,
+.social-icons a{
+  color:white;
+  text-decoration:none;
 }
 
-.navigation a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s;
+.navigation a:hover{
+  color:#8B0000;
 }
 
-.navigation a:hover {
-  color: #8B0000;
+/* LOGIN / CADASTRO */
+.social-icons{
+  display:flex;
+  gap:15px;
+  align-items:center;
 }
 
-.social-icons {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  border-left: 2px solid white;
-  padding-left: 15px;
+.social-icons a:first-child{
+  border-right:1px solid white;
+  padding-right:15px;
 }
 
-.cadastros {
-  list-style: none;
-  text-decoration: none;
-  align-items: center;
-}
-#border{
-border-left: 1px solid white;
-
-
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
+/* BOTÃO HAMBURGUER */
+.menu-toggle{
+  display:none;
+  font-size:2rem;
+  color:white;
+  cursor:pointer;
 }
 
 /* ================= MAIN ================= */
 
-main {
-  padding-top: 140px;
-}
+
 
 /* ================= OBJETIVOS ================= */
 
@@ -357,9 +339,7 @@ button {
 /* ================= RESPONSIVO ================= */
 
 @media (max-width: 1024px) {
-  main {
-    padding-top: 100px;
-  }
+ 
 
   .menu-toggle {
     display: block;
